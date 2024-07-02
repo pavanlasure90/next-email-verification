@@ -60,7 +60,7 @@ const RegisterForm = () => {
         } catch (error) {
             setError('Failed to connect to server.');
             console.error('Error during registration', error);
-        }
+        } 
     };
 
     return (
@@ -69,7 +69,7 @@ const RegisterForm = () => {
                 <h1 className="text-xl font-bold my-4">Register</h1>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-3">
                     <input
-                        type="text"
+                        type="text" 
                         placeholder="Full Name"
                         onChange={(e) => setName(e.target.value)}
                     />
