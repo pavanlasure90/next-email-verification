@@ -8,7 +8,7 @@ export const authOptions = {
   providers: [
     CredentialsProvider({
       name: "credentials",
-      credentials: {},
+      credentials: {} ,
 
       async authorize(credentials) {
         const { email, password } = credentials;
@@ -29,7 +29,7 @@ export const authOptions = {
 
           return user;
         } catch (error) {
-          console.log("Error: ", error);
+          console.log("Error:", error);
         }
       },
     }),
